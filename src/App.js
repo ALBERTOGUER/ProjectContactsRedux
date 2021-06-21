@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import { Provider } from 'react-redux';
+import ContactList from './components/contact-list/contacts';
+import ContactInfo from './components/contact-list/contact-info';
+import store from './store'
+import React, { useState } from "react";
 
 function App() {
+  
+  const handleShowForm = () =>{
+
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <ContactList />
+      <ContactInfo />
+    </Provider>
   );
 }
 
