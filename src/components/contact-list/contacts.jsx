@@ -22,7 +22,6 @@ const ContactList = ({contacts,addContactName,displayInfo}) => {
   }
 
   const handleSubmitInfo = (contact) =>{
-    console.log(contact)
     displayInfo(contact)
   }
 

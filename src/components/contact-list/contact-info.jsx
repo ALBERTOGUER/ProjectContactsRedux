@@ -10,7 +10,6 @@ const ContacInfo = ({ contactInfo, form,ChangeInfo }) => {
         age: document.getElementById('inputAge').value,
         mail: document.getElementById('inputMail').value,
     }
-    console.log(newInfo)
     ChangeInfo(newInfo)
   }
 
